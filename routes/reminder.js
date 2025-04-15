@@ -23,6 +23,11 @@ router.post('/addReminder', auth, async (req, res) => {
   }
 });
 
+// test route
+router.get('/test', (req, res) => {
+  res.send('Test route is working');
+});
+
 // GET /getReminders
 router.get('/getReminders', auth, async (req, res) => {
   try {
